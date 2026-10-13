@@ -56,6 +56,7 @@ input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
 .tag{display:inline-block;font-size:11.5px;font-weight:600;padding:1px 7px;border-radius:999px;margin-left:6px}
 .tag.low{background:var(--warn);color:#3a2800}
 .tag.okk{background:var(--ok-soft);color:var(--ok)}
+.note{margin-top:6px;padding:6px 9px;border-radius:7px;background:var(--accent-soft);color:var(--ink);font-size:12.5px;line-height:1.35}
 .empty{padding:30px 20px;color:var(--muted);text-align:center}
 footer{padding:10px 20px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--line)}
 .sign{margin-top:6px;padding-top:6px;border-top:1px dashed var(--line);color:var(--ink);font-size:12px}
@@ -179,7 +180,8 @@ function render(){
       const ds=CAL[zz], low=ds.includes(todayIdx);
       return `<div class="z"><b>Zona ${zz}</b> · suspendido: ${ds.map(d=>DAYS[d]).join(', ')}${low?'<span class="tag low">hoy</span>':''}</div>`;
     }).join('');
-    html+=`<div class="item"><div class="name">${esc(title(i.col))}${i.zonas.length>1?'<span class="tag okk">varias zonas</span>':''}</div><div class="zs">${zs}</div></div>`;
+    const note = i.zonas.length>1 ? '<div class="note">Tu colonia se abastece de varios acueductos: según tu calle te toca <b>solo una</b> de estas zonas. Verifica tu domicilio en el mapa oficial.</div>' : '';
+    html+=`<div class="item"><div class="name">${esc(title(i.col))}${i.zonas.length>1?'<span class="tag okk">varias zonas</span>':''}</div><div class="zs">${zs}</div>${note}</div>`;
   }
   $l.innerHTML=html;
 }
