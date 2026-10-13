@@ -1,8 +1,8 @@
 # Rotación de agua · ZMG
 
-Mapa interactivo para consultar los **días de baja presión** del *Esquema de Rotación de Agua Limpia* del Gobierno de Jalisco en la zona metropolitana de Guadalajara.
+Mapa interactivo para consultar los **días de suspensión del servicio** del *Esquema de Rotación de Agua Limpia* del Gobierno de Jalisco en la zona metropolitana de Guadalajara.
 
-Toca un municipio en el mapa o busca tu colonia para ver su zona y los días de la semana en que tiene baja presión.
+Toca un municipio en el mapa o busca tu colonia para ver su zona y los días de la semana en que se le suspende el servicio.
 
 > ⚠️ **Proyecto no oficial.** Los datos se transcribieron a mano de las imágenes publicadas por el Gobierno de Jalisco y pueden contener errores. Antes de tomar decisiones, consulta siempre los canales oficiales del Gobierno de Jalisco y del SIAPA.
 
@@ -11,14 +11,14 @@ Toca un municipio en el mapa o busca tu colonia para ver su zona y los días de 
 - **Mapa por municipio**: Guadalajara, Zapopan, Tlaquepaque y Tonalá. Al tocar uno se resalta y la lista se filtra.
 - **Búsqueda de colonias**: acepta coincidencias parciales y no distingue acentos.
 - **Filtros** por municipio, por zona y por día de la semana.
-- **Aviso del día**: muestra qué zonas tienen baja presión hoy y marca las colonias afectadas.
+- **Aviso del día**: muestra qué zonas tienen el servicio suspendido hoy y marca las colonias afectadas.
 - **Colonias en varias zonas**: las que se abastecen de varios acueductos aparecen una sola vez, con los días de cada zona.
 - **Diseño adaptable** a celular y con modo oscuro automático.
 - **Sin dependencias de servidor**: es un solo archivo HTML estático.
 
 ## Calendario semanal
 
-| Zona | Días de baja presión |
+| Zona | Días de suspensión |
 |:---:|---|
 | 1 | Viernes, Domingo |
 | 2 | Martes, Jueves, Domingo |
@@ -33,7 +33,7 @@ Toca un municipio en el mapa o busca tu colonia para ver su zona y los días de 
 | Archivo | Descripción |
 |---|---|
 | `index.html` | La página del mapa. Incluye los datos de las colonias y los límites municipales. |
-| `rotacion_agua_colonias.xlsx` | *(Opcional)* Hoja de cálculo con municipio, colonia, zona y días de baja presión, más el calendario semanal. |
+| `rotacion_agua_colonias.xlsx` | *(Opcional)* Hoja de cálculo con municipio, colonia, zona y días de suspensión, más el calendario semanal. |
 | `README.md` | Este archivo. |
 
 ## Publicar en GitHub Pages
