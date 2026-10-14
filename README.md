@@ -39,23 +39,6 @@ Toca tu colonia en el mapa o búscala en la lista para ver su zona y los días d
 | `rotacion_agua_colonias.xlsx` | *(Opcional)* Hoja de cálculo con municipio, colonia, zona, días de suspensión y si la colonia tiene límite en el mapa, más el calendario semanal. |
 | `README.md` | Este archivo. |
 
-## Publicar en GitHub Pages
-
-1. Crea un repositorio **público** en GitHub, por ejemplo `rotacion-agua-zmg`.
-2. Sube `index.html` y `README.md` a la raíz del repositorio, ya sea con **Add file → Upload files** o con git:
-   ```bash
-   git init
-   git add index.html README.md
-   git commit -m "Mapa de rotación de agua ZMG"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/rotacion-agua-zmg.git
-   git push -u origin main
-   ```
-3. En el repositorio entra a **Settings → Pages**.
-4. En **Source** elige **Deploy from a branch**, selecciona la rama `main` y la carpeta `/ (root)`, y guarda.
-5. Después de uno o dos minutos, el sitio estará en:
-   `https://TU_USUARIO.github.io/rotacion-agua-zmg/`
-
 ### Verlo en tu computadora
 
 Basta con abrir `index.html` en el navegador. Necesita conexión a internet para cargar Leaflet y el mapa base de OpenStreetMap.
